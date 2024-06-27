@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edytuj Kwiat</title>
+</head>
+<body>
+    <h1>Edytuj Kwiat</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        Nazwa Kwiatu:
+        <input name="text" value="{{ flower.name_flower }}" />
+        <button type="submit">Zapisz</button>
+    </form>
+    <a href="{% url 'flowers' %}">Wróć do listy</a>
+</body>
+</html>

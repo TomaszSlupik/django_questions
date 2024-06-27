@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Kwiat</title>
+</head>
+<body>
+    <form action="{% url 'add_flower' %}" method="post">
+        {% csrf_token %}
+        Dodaj Kwiat:
+        <input name="text" />
+        <button type="submit">Dodaj</button>
+    </form>
+</body>
+</html>

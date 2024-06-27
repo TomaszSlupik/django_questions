@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.bordered-table th, .bordered-table td {
+    border: 10px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.bordered-table thead tr {
+    background-color: black;
+}

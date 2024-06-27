@@ -1,0 +1,6 @@
+venv
+my_site/settings.py
+my_site/__pycache__
+
+
+

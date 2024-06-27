@@ -1,0 +1,20 @@
+*, 
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+
+li {
+    font-size: 25px;
+    margin-left: 2em;
+}
+

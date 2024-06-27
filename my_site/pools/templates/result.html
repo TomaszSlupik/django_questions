@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>{{ question.question_text }}</h1></legend>
+        {% for choice in question.choices.all %}
+        <h3>{{choice.choice_text}} - {{choice.votes}} vote{{ choice.votes|pluralize }}</h3>
+        {% endfor %}
+    </fieldset>
+</body>
+</html>
